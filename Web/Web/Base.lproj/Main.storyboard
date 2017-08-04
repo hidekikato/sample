@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F2411" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Web" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wsG-YD-q5R">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <barButtonItem title="Google" id="O8M-Ue-zJS">
+                                        <connections>
+                                            <action selector="tabGoogle:" destination="BYZ-38-t0r" id="oei-R5-25r"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="bOP-cr-Cq9"/>
+                                    <barButtonItem title="yahoo! JAPAN" id="sBc-yq-zJk">
+                                        <connections>
+                                            <action selector="tapYahoo:" destination="BYZ-38-t0r" id="WQD-pt-SID"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Kjb-Na-Wfl"/>
+                                    <barButtonItem title="Amazon" id="pwq-Go-YK0">
+                                        <connections>
+                                            <action selector="tapAmazon:" destination="BYZ-38-t0r" id="2gl-wa-5IU"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="gih-kR-Bis"/>
+                                    <barButtonItem title="back" id="b73-1S-HmL">
+                                        <connections>
+                                            <action selector="tapBack:" destination="BYZ-38-t0r" id="DR2-Gy-mte"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="next" id="6ML-nM-dDm">
+                                        <connections>
+                                            <action selector="tapNext:" destination="BYZ-38-t0r" id="Rcm-3p-nfH"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="refresh" id="fCa-dA-W2a">
+                                        <connections>
+                                            <action selector="tapReload:" destination="BYZ-38-t0r" id="QAT-l5-S4n"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="barTintColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Th5-bs-wrx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yb4-7O-6g3">
+                                        <rect key="frame" x="8" y="32" width="359" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="4ib-8y-TNP"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="Yb4-7O-6g3" secondAttribute="trailing" id="XUK-zP-P9d"/>
+                                    <constraint firstItem="Yb4-7O-6g3" firstAttribute="centerY" secondItem="Th5-bs-wrx" secondAttribute="centerY" id="Zfx-Bk-7zM"/>
+                                    <constraint firstItem="Yb4-7O-6g3" firstAttribute="leading" secondItem="Th5-bs-wrx" secondAttribute="leadingMargin" id="nT2-sp-KNL"/>
+                                    <constraint firstItem="Yb4-7O-6g3" firstAttribute="centerX" secondItem="Th5-bs-wrx" secondAttribute="centerX" id="rgJ-m0-6rs"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="rgJ-m0-6rs"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wsG-YD-q5R" secondAttribute="bottom" id="5AY-jd-gbL"/>
+                            <constraint firstItem="Th5-bs-wrx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6oS-hG-tfq"/>
+                            <constraint firstItem="wsG-YD-q5R" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7pv-6L-Xc9"/>
+                            <constraint firstItem="Th5-bs-wrx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FvJ-Xg-PK5"/>
+                            <constraint firstItem="Th5-bs-wrx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Tvb-fO-OMh"/>
+                            <constraint firstAttribute="trailing" secondItem="wsG-YD-q5R" secondAttribute="trailing" id="ce4-yg-Q12"/>
+                            <constraint firstAttribute="trailing" secondItem="Th5-bs-wrx" secondAttribute="trailing" id="l4H-Pf-cqk"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Tvb-fO-OMh"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="Yb4-7O-6g3" id="PGv-cA-byD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
