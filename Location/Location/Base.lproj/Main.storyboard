@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F2411" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Location" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdg-b9-9xd">
+                                <rect key="frame" x="50" y="475" width="32" height="30"/>
+                                <state key="normal" title="start"/>
+                                <connections>
+                                    <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bya-BO-IBm"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oya-8w-F7U">
+                                <rect key="frame" x="0.0" y="530" width="375" height="137"/>
+                                <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jFK-qS-fyu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="450"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="450" id="XI0-CH-zMn"/>
+                                </constraints>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v93-b4-xaJ">
+                                <rect key="frame" x="294" y="475" width="31" height="30"/>
+                                <state key="normal" title="stop"/>
+                                <connections>
+                                    <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PY9-R2-A8B"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oya-8w-F7U" firstAttribute="top" secondItem="v93-b4-xaJ" secondAttribute="bottom" constant="25" id="05E-KA-dNJ"/>
+                            <constraint firstAttribute="trailing" secondItem="v93-b4-xaJ" secondAttribute="trailing" constant="50" id="1YN-jg-As5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oya-8w-F7U" secondAttribute="bottom" id="A2p-3U-FA1"/>
+                            <constraint firstAttribute="trailing" secondItem="jFK-qS-fyu" secondAttribute="trailing" id="RWI-Uf-tVg"/>
+                            <constraint firstItem="jFK-qS-fyu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ShW-OY-dYU"/>
+                            <constraint firstAttribute="trailing" secondItem="oya-8w-F7U" secondAttribute="trailing" id="TEa-K0-aVr"/>
+                            <constraint firstItem="wdg-b9-9xd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="c3k-PR-Klw"/>
+                            <constraint firstItem="oya-8w-F7U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ch5-Ku-37D"/>
+                            <constraint firstItem="jFK-qS-fyu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="eEj-mx-X8a"/>
+                            <constraint firstItem="wdg-b9-9xd" firstAttribute="top" secondItem="jFK-qS-fyu" secondAttribute="bottom" constant="25" id="gbu-fS-7fO"/>
+                            <constraint firstItem="v93-b4-xaJ" firstAttribute="top" secondItem="jFK-qS-fyu" secondAttribute="bottom" constant="25" id="uP3-HC-cvu"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="myMapView" destination="jFK-qS-fyu" id="rBp-cP-KrV"/>
+                        <outlet property="myTextView" destination="oya-8w-F7U" id="e4T-FE-ZgG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="439.5" y="350.5"/>
+        </scene>
+    </scenes>
+</document>

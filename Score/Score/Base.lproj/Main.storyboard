@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F2411" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Score" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="何点？" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HbS-Wx-BGl">
+                                <rect key="frame" x="16" y="120" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="点数入力" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AsZ-DX-ubh">
+                                <rect key="frame" x="16" y="191" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wnj-LB-RtR">
+                                <rect key="frame" x="16" y="351" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gmT-qD-h9b">
+                                <rect key="frame" x="88" y="422" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="HBf-aF-cTN"/>
+                                    <constraint firstAttribute="height" constant="200" id="fjE-vu-mab"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1u-XP-JoL">
+                                <rect key="frame" x="16" y="271" width="343" height="30"/>
+                                <state key="normal" title="check!!"/>
+                                <connections>
+                                    <action selector="myButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KcX-0K-mVD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="AsZ-DX-ubh" secondAttribute="trailing" id="6sE-1g-fq3"/>
+                            <constraint firstItem="AsZ-DX-ubh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7uU-XD-LIK"/>
+                            <constraint firstItem="Wnj-LB-RtR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="8aA-00-74r"/>
+                            <constraint firstItem="Wnj-LB-RtR" firstAttribute="top" secondItem="g1u-XP-JoL" secondAttribute="bottom" constant="50" id="KQM-5U-Rfj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HbS-Wx-BGl" secondAttribute="trailing" id="LR6-lf-OJT"/>
+                            <constraint firstItem="g1u-XP-JoL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="WO5-CT-qVj"/>
+                            <constraint firstItem="AsZ-DX-ubh" firstAttribute="top" secondItem="HbS-Wx-BGl" secondAttribute="bottom" constant="50" id="YjD-n5-Uuc"/>
+                            <constraint firstItem="HbS-Wx-BGl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="abi-rg-T2g"/>
+                            <constraint firstItem="HbS-Wx-BGl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="gfz-aV-QZR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="g1u-XP-JoL" secondAttribute="trailing" id="hD6-I1-bYN"/>
+                            <constraint firstItem="gmT-qD-h9b" firstAttribute="top" secondItem="Wnj-LB-RtR" secondAttribute="bottom" constant="50" id="ppc-Sd-DwW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Wnj-LB-RtR" secondAttribute="trailing" id="rCJ-o9-OwJ"/>
+                            <constraint firstItem="gmT-qD-h9b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xba-fb-bXM"/>
+                            <constraint firstItem="g1u-XP-JoL" firstAttribute="top" secondItem="AsZ-DX-ubh" secondAttribute="bottom" constant="50" id="zLL-X0-8Ij"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="myImageView" destination="gmT-qD-h9b" id="HmT-yZ-YX6"/>
+                        <outlet property="myLabel" destination="Wnj-LB-RtR" id="N7w-Ii-gqG"/>
+                        <outlet property="myTextField" destination="AsZ-DX-ubh" id="Nsz-qm-xZ3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
